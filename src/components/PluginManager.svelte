@@ -104,9 +104,11 @@
 		await installPlugin(plugin.name, selected.browser_download_url, null, id);
 	}
 
+	/*
 	async function installPluginElgato(plugin: any) {
 		await installPlugin(plugin.name, `https://plugins.amankhanna.me/rezipped/${plugin.id}.zip`, null, plugin.id);
 	}
+	*/
 
 	async function installPluginFile() {
 		const path = await open({ multiple: false, directory: false });
@@ -262,6 +264,7 @@
 		</div>
 	{/if}
 
+	<!--
 	{#await fetch("https://plugins.amankhanna.me/catalogue.json")}
 		<h2 class="mx-2 mt-6 mb-2 text-md dark:text-neutral-400">Loading Elgato App Store archive plugin list...</h2>
 	{:then archiveRes}
@@ -288,6 +291,7 @@
 			</div>
 		{/await}
 	{/await}
+	-->
 </Popup>
 
 {#if openDetailsView}
