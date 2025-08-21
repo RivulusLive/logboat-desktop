@@ -118,28 +118,17 @@ async fn main() {
 						app.dialog()
 							.message(format!(
 								r#"Thanks for installing {PRODUCT_NAME}!
-If you have any issues, please reach out on any of the support channels listed on GitHub (and make sure to star the project while you're there!).
-
-Some minimal statistics (such as operating system and plugins installed) will be collected from the next time the app starts.
-If you do not wish to support development in this way, please disable statistics in the settings.
+If you have any issues, please reach out on any of the support channels listed on the Logboat website.
 
 Enjoy!"#,
 							))
 							.title(format!("{PRODUCT_NAME} has successfully been installed"))
 							.kind(MessageDialogKind::Info)
 							.show(|_| ());
-						settings.value.statistics = false;
+						// settings.value.statistics = false;
 					} else {
 						app.dialog()
-							.message(format!(
-								r#"{PRODUCT_NAME} has been updated to v{}!
-Every update brings features, bug fixes, and other improvements, which I spend my time implementing for free.
-
-If you spent $125 on your hardware, please consider spending $5 on the software that makes it work.
-You can donate to support development with just a few clicks on GitHub Sponsors.
-If you have already donated, thank you so much for your support!"#,
-								built_info::PKG_VERSION
-							))
+							.message(format!("{PRODUCT_NAME} has been updated to v{}!", built_info::PKG_VERSION))
 							.title(format!("{PRODUCT_NAME} has successfully been updated"))
 							.kind(MessageDialogKind::Info)
 							.show(|_| ());
@@ -150,7 +139,7 @@ If you have already donated, thank you so much for your support!"#,
 
 			use tauri_plugin_aptabase::{Builder, EventTracker, InitOptions};
 			app.handle().plugin(
-				Builder::new(if settings.value.statistics { "A-SH-3841489320" } else { "" })
+				Builder::new(if settings.value.statistics { "A-SH-4385753865" } else { "" })
 					.with_options(InitOptions {
 						host: Some("https://aptabase.amankhanna.me".to_owned()),
 						flush_interval: None,
