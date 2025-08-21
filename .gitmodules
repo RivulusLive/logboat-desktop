@@ -1,0 +1,3 @@
+[submodule "plugins/us.rivul.logboat.sdPlugin"]
+	path = plugins/us.rivul.logboat.sdPlugin
+	url = https://github.com/RivulusLive/logboat-connect.git
