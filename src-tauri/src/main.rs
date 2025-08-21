@@ -2,12 +2,24 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod application_watcher;
-mod elgato;
+// mod elgato;
 mod events;
 mod plugins;
 mod shared;
 mod store;
 mod zip_extract;
+
+mod elgato {
+	pub async fn update_image(_: &crate::shared::Context, _: Option<&str>) -> Result<(), anyhow::Error> {
+		Ok(())
+	}
+	pub async fn clear_screen(_: &str) -> Result<(), anyhow::Error> {
+		Ok(())
+	}
+	pub async fn set_brightness(_: u8) {}
+	pub async fn reset_devices() {}
+	pub async fn initialise_devices() {}
+}
 
 mod built_info {
 	include!(concat!(env!("OUT_DIR"), "/built.rs"));

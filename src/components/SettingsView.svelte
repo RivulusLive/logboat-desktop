@@ -79,10 +79,12 @@
 			</Tooltip>
 		</div>
 
+		<!--
 		<div class="flex flex-row items-center m-2 space-x-2">
 			<span class="dark:text-neutral-400"> Device brightness: </span>
 			<input type="range" min="0" max="100" bind:value={$settings.brightness} />
 		</div>
+		-->
 
 		<div class="flex flex-row items-center m-2 space-x-2">
 			<span class="dark:text-neutral-400"> Enable dark theme: </span>
@@ -131,11 +133,13 @@
 			</Tooltip>
 		</div>
 
+		<!--
 		<div class="flex flex-row items-center m-2 space-x-2">
 			<span class="dark:text-neutral-400"> Disable Elgato device discovery: </span>
 			<input type="checkbox" bind:checked={$settings.disableelgato} />
 			<Tooltip> This option disables discovery of Elgato devices so that they can be managed by other software. </Tooltip>
 		</div>
+		-->
 	{/if}
 
 	<div class="ml-2">
