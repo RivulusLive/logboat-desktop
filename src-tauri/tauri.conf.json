@@ -26,9 +26,9 @@
 				}
 			}
 		},
-		"publisher": "Aman Khanna (nekename)",
+		"publisher": "Rivulus",
 		"shortDescription": "Use stream controllers",
-		"longDescription": "OpenDeck is a desktop application for using stream controller devices like the Elgato Stream Deck. OpenDeck supports plugins made for the original Stream Deck SDK, allowing many plugins made for the Elgato software ecosystem to be used.",
+		"longDescription": "Instant control of your workflow at your fingertips, using only the power of a keyboard, smartphone or tablet",
 		"category": "Productivity",
 		"icon": [
 			"icons/icon.png",
@@ -39,7 +39,7 @@
 			"exceptionDomain": "localhost"
 		}
 	},
-	"productName": "OpenDeck",
+	"productName": "Logboat",
 	"mainBinaryName": "opendeck",
 	"identifier": "opendeck",
 	"plugins": {
@@ -52,7 +52,7 @@
 	"app": {
 		"windows": [
 			{
-				"title": "OpenDeck",
+				"title": "Logboat",
 				"fullscreen": false,
 				"resizable": true,
 				"width": 800,
