@@ -1,3 +1,8 @@
+# Logboat
+
+> [!WARNING]
+> This repo contains the source for the Logboat fork of OpenDeck. If you are looking to install OpenDeck, please visit the [upstream repo](https://github.com/nekename/OpenDeck).
+
 # OpenDeck
 
 Linux software for your Elgato Stream Deck
