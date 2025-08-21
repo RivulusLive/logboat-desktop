@@ -1,0 +1,6 @@
+[submodule "plugins/us.rivul.logboat.mobile.sdPlugin"]
+	path = plugins/us.rivul.logboat.mobile.sdPlugin
+	url = https://github.com/RivulusLive/logboat-mobile.git
+[submodule "plugins/us.rivul.logboat.keyboard.sdPlugin"]
+	path = plugins/us.rivul.logboat.keyboard.sdPlugin
+	url = https://github.com/RivulusLive/logboat-keyboard.git
