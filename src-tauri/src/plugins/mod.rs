@@ -137,9 +137,9 @@ pub async fn initialise_plugin(path: &path::Path) -> anyhow::Result<()> {
 
 			supported = true;
 			break;
-		} else if os.platform == "windows" {
-			use_wine = true;
-			supported = true;
+			// } else if os.platform == "windows" {
+			// 	use_wine = true;
+			// 	supported = true;
 		}
 	}
 
